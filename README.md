@@ -1,31 +1,20 @@
-# Mi página
+# Buzón de sugerencias
 
-Una página pública con un formulario que guarda lo que la gente escribe, y una
-lista que muestra lo guardado.
+Página del equipo de Jc: cualquiera manda una sugerencia por un formulario y se
+puede revisar la lista de lo mandado.
 
-Construida en la **Sesión 7 del curso Claude for Business**, sin escribir código:
-todo se le pidió a Claude en español.
+**Datos:** todo sale de la tabla `registros` en Supabase (columnas `id`,
+`nombre`, `mensaje`, `created_at`). Nada se escribe a mano en el HTML.
 
-## Cómo está armado
+**`.claude/agents/revisor-antes-de-publicar.md`:** agente de solo lectura que
+revisa el código antes de publicar (llaves expuestas, alcance del cambio,
+calidad). Se dispara pidiéndole a Claude que revise antes de publicar.
 
-| Pieza | Qué hace |
-|---|---|
-| **GitHub** | Guarda este proyecto y su historial |
-| **Netlify** | Publica lo que hay aquí como página web |
-| **Supabase** | Guarda lo que la gente escribe en el formulario |
+**Estado actual:** `index.html` sigue siendo la página de prueba de la sesión;
+falta pedirle a Claude que la reemplace por el formulario y la lista reales.
 
-## Cómo se cambia
-
-1. Se abre una sesión de Claude sobre este repositorio.
-2. Se le pide el cambio **en una rama**, no en `main`.
-3. Netlify hace una **vista previa** con su propia liga: ahí se revisa.
-4. Cuando está bien, se fusiona la rama. Eso —y solo eso— publica.
-
-> **Fusionar cuesta.** El plan gratuito de Netlify alcanza para unas veinte
-> publicaciones al mes. Las vistas previas son gratis e ilimitadas: se itera ahí
-> y se fusiona poco.
-
-## Qué NO va en este repositorio
-
-La llave `sb_publishable_` sí puede estar aquí: está hecha para andar a la vista.
-La que empieza con `sb_secret_` o dice `service_role`, **nunca**.
+**Para continuar:**
+1. Abre una sesión de Claude sobre este repositorio.
+2. Pide el cambio en una rama, nunca en `main`.
+3. Netlify da una vista previa por rama; se revisa ahí.
+4. Al fusionar a `main`, Netlify publica solo. Reglas completas en `CLAUDE.md`.
