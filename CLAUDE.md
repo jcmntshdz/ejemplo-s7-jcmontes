@@ -8,8 +8,8 @@ primer minuto.
 
 ## 1. Qué es este proyecto y quién lo usa
 
-*(Lo escribes tú en la sesión: dos líneas. Qué es la página, para quién es y cada
-cuándo se usa.)*
+Es un buzón de sugerencias para mi equipo. Lo uso yo (Jc) y todo el equipo, para
+mandar sugerencias cuando surgen y revisarlas cuando hace falta.
 
 ## 2. De dónde sale cada cifra
 
@@ -40,8 +40,9 @@ sale de esa tabla o de lo que la persona escriba en el formulario.
 
 ## 5. Mi regla de verificación
 
-*(La escribes tú en la sesión: con qué frase cierras lo que entregas y qué tiene
-que ser cierto para que puedas publicarlo.)*
+Antes de dar algo por publicado: hice `git pull` de la rama para traer lo último
+y desplegué (fusioné a `main` y confirmé en la liga de Netlify que ya se ve).
+Si no puedo decir "hice pull y desplegué", no está listo.
 
 ## 6. Cómo vuelvo a abrir esto
 
@@ -53,3 +54,8 @@ que ser cierto para que puedas publicarlo.)*
 > **Si la página deja de mostrar datos después de una semana sin usarla**, casi
 > siempre es que el proyecto gratuito de Supabase se pausó. Se despierta con el
 > botón **Resume project**.
+
+## 7. Sistema de diseño
+
+- Colores: rojo, negro y blanco.
+- Tipografía: Arial.
